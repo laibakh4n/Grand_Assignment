@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # riscv-log-analyzer v1.0
+=======
+# riscv-log-analyzer v2.0
+>>>>>>> conflict-branch-b
 
 A shell-based tool that analyzes RISC-V simulation log files and generates summary reports.
 
