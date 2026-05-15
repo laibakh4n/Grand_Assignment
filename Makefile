@@ -34,3 +34,9 @@ help:
 	@echo "  make clean  -> Remove generated files"
 	@echo "  make setup  -> Check required tools"
 	@echo "  make help   -> Show this help"
+lint:
+	@echo "Checking scripts for errors..."
+	bash -n scripts/analyze.sh
+	bash -n scripts/setup_env.sh
+	bash -n scripts/generate_report.sh
+	@echo "All scripts OK!"
