@@ -38,3 +38,5 @@ Verdict: FAIL
 - `make clean` → Remove generated files
 - `make setup` → Check required tools
 - `make help` → Show help
+## Author 
+Meow meow 2023
