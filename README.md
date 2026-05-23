@@ -1,4 +1,4 @@
-# riscv-log-analyzer
+# Riscv-log-analyzer
 
 A shell-based tool that analyzes RISC-V simulation log files
 oand generates summary reports.
@@ -71,7 +71,7 @@ Verdict: FAIL
 
 ## Make Targets
 
-<<<<<<< HEAD
+
 | Target       | Description                        |
 |--------------|------------------------------------|
 | make all     | Run analyzer on all log files      |
@@ -116,5 +116,4 @@ Laiba Khan — MEDS Lab, UET Lahore — Summer 2026
 - `make setup` → Check required tools
 - `make help` → Show help
 ## Author 
-Meow meow 2023
->>>>>>> efb4a182d16e7faefe175b216a75fee50b3f4f98
+Laiba khan 
