@@ -21,11 +21,7 @@ clean:
 	@echo "Generated files removed"
 
 setup:
-	@which bash
-	@which grep
-	@which awk
-	@echo "All tools found"
-
+	@bash scripts/setup_env.sh
 help:
 	@echo "Available targets:"
 	@echo "  make all    -> Run analyzer on all logs"
@@ -38,5 +34,6 @@ lint:
 	@echo "Checking scripts for errors..."
 	bash -n scripts/analyze.sh
 	bash -n scripts/setup_env.sh
-	bash -n scripts/generate_report.sh
+	bash -n scripts/generate_report.sh 
 	@echo "All scripts OK!"
+# bash -n checks a script for syntax errors WITHOUT actually running it

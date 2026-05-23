@@ -1,11 +1,18 @@
 #!/bin/bash
+# setup_env.sh - checks all required tools are installed
 
-# check required tools
-echo "Checking tools..."
+set -euo pipefail
 
-which bash
-which grep
-which awk
-which sort
+echo "Checking required tools..."
 
-echo "All tools found!"
+for tool in bash grep awk sed git; do
+    if command -v "$tool" > /dev/null 2>&1; then
+        echo "  OK: $tool"
+    else
+        echo "  MISSING: $tool - please install it"
+        exit 1
+    fi
+done
+
+echo ""
+echo "All tools found! Environment is ready."

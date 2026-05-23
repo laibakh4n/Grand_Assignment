@@ -13,3 +13,4 @@ Thumbs.db
 # Logs (except test data)
 *.log
 !test_data/*.log
+

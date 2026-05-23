@@ -1,5 +1,5 @@
 #!/bin/bash
-
+set -euo pipefail
 # generate_report.sh - generates summary report for all log files
 
 echo "Generating report..."

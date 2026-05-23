@@ -20,13 +20,13 @@ if [ ! -f "$LOG_FILE" ]; then
 fi
 
 # count results by searching for keywords
-PASSED=$(grep -c "TEST PASS" "$LOG_FILE" || true)
-FAILED=$(grep -c "TEST FAIL" "$LOG_FILE" || true)
-SKIPPED=$(grep -c "TEST SKIP" "$LOG_FILE" || true)
+PASSED=$(grep -c "PASS" "$LOG_FILE" || true)
+FAILED=$(grep -c "FAIL" "$LOG_FILE" || true)
+SKIPPED=$(grep -c "SKIP" "$LOG_FILE" || true)
+
+FAILED_TESTS=$(grep "FAIL" "$LOG_FILE" || true)
 TOTAL=$((PASSED + FAILED + SKIPPED))
 
-# get failing test names
-FAILED_TESTS=$(grep "TEST FAIL" "$LOG_FILE" | awk '{print $5}' || true)
 
 # print results
 echo "=== RISC-V Log Analysis ==="
@@ -54,3 +54,18 @@ else
     echo "Verdict: PASS"
     exit 0
 fi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
