@@ -1,13 +1,10 @@
 #!/bin/bash
-# analyze.sh - reads a log file and counts test results
-# Usage: ./analyze.sh <logfile> [--verbose] [--help] [--format text|csv] [--output <path>]
-
 # safety settings
 set -euo pipefail
 
 # ─── FUNCTIONS ───────────────────────────────────────
 
-# function 1: print usage/help
+# function 1
 print_help() {
     echo "Usage: $0 <logfile> [options]"
     echo ""
