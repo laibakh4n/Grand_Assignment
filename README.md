@@ -105,15 +105,6 @@ riscv-log-analyzer/
 
 ---
 
-## Author
-
-Laiba Khan — MEDS Lab, UET Lahore — Summer 2026
-=======
-- `make all` → Run analyzer on all logs
-- `make test` → Run tests
-- `make report` → Generate report
-- `make clean` → Remove generated files
-- `make setup` → Check required tools
-- `make help` → Show help
 ## Author 
+
 Laiba khan 
